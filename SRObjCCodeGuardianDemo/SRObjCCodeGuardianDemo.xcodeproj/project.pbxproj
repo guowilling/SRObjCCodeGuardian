@@ -76,6 +76,8 @@
 		688D622B1F29C0A400DCF26F /* SRObjCCodeGuardianDemo */ = {
 			isa = PBXGroup;
 			children = (
+				688D62321F29C0A400DCF26F /* ViewController.h */,
+				688D62331F29C0A400DCF26F /* ViewController.m */,
 				688D622C1F29C0A400DCF26F /* Supporting Files */,
 			);
 			path = SRObjCCodeGuardianDemo;
@@ -87,8 +89,6 @@
 				688D622D1F29C0A400DCF26F /* main.m */,
 				688D622F1F29C0A400DCF26F /* AppDelegate.h */,
 				688D62301F29C0A400DCF26F /* AppDelegate.m */,
-				688D62321F29C0A400DCF26F /* ViewController.h */,
-				688D62331F29C0A400DCF26F /* ViewController.m */,
 				688D62351F29C0A400DCF26F /* Main.storyboard */,
 				688D62381F29C0A400DCF26F /* Assets.xcassets */,
 				688D623A1F29C0A400DCF26F /* LaunchScreen.storyboard */,
@@ -358,6 +358,7 @@
 				688D62421F29C0A400DCF26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
