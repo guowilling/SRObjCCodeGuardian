@@ -13,12 +13,12 @@
 		688D62371F29C0A400DCF26F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688D62351F29C0A400DCF26F /* Main.storyboard */; };
 		688D62391F29C0A400DCF26F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688D62381F29C0A400DCF26F /* Assets.xcassets */; };
 		688D623C1F29C0A400DCF26F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688D623A1F29C0A400DCF26F /* LaunchScreen.storyboard */; };
-		688D62471F29C0E700DCF26F /* NSObject+SRSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D62461F29C0E700DCF26F /* NSObject+SRSwizzling.m */; };
-		688D62561F29C13E00DCF26F /* NSMutableDictionary+SRGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D62551F29C13E00DCF26F /* NSMutableDictionary+SRGuardian.m */; };
-		688D62591F29C14700DCF26F /* NSArray+SRGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D62581F29C14700DCF26F /* NSArray+SRGuardian.m */; };
-		688D625C1F29C15100DCF26F /* NSMutableArray+SRGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D625B1F29C15100DCF26F /* NSMutableArray+SRGuardian.m */; };
-		688D625F1F29C15C00DCF26F /* NSDictionary+SRGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D625E1F29C15C00DCF26F /* NSDictionary+SRGuardian.m */; };
-		688D62611F29C1FA00DCF26F /* SRNullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D62601F29C1FA00DCF26F /* SRNullSafe.m */; };
+		68C3338B1F380FD00012013C /* NSArray+SRGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C333811F380FD00012013C /* NSArray+SRGuardian.m */; };
+		68C3338C1F380FD00012013C /* NSDictionary+SRGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C333831F380FD00012013C /* NSDictionary+SRGuardian.m */; };
+		68C3338D1F380FD00012013C /* NSMutableArray+SRGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C333851F380FD00012013C /* NSMutableArray+SRGuardian.m */; };
+		68C3338E1F380FD00012013C /* NSMutableDictionary+SRGuardian.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C333871F380FD00012013C /* NSMutableDictionary+SRGuardian.m */; };
+		68C3338F1F380FD00012013C /* NSObject+SRSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C333891F380FD00012013C /* NSObject+SRSwizzling.m */; };
+		68C333901F380FD00012013C /* SRNullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C3338A1F380FD00012013C /* SRNullSafe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,17 +32,17 @@
 		688D62381F29C0A400DCF26F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		688D623B1F29C0A400DCF26F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		688D623D1F29C0A400DCF26F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		688D62451F29C0E700DCF26F /* NSObject+SRSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SRSwizzling.h"; sourceTree = "<group>"; };
-		688D62461F29C0E700DCF26F /* NSObject+SRSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SRSwizzling.m"; sourceTree = "<group>"; };
-		688D62541F29C13E00DCF26F /* NSMutableDictionary+SRGuardian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SRGuardian.h"; sourceTree = "<group>"; };
-		688D62551F29C13E00DCF26F /* NSMutableDictionary+SRGuardian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SRGuardian.m"; sourceTree = "<group>"; };
-		688D62571F29C14700DCF26F /* NSArray+SRGuardian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SRGuardian.h"; sourceTree = "<group>"; };
-		688D62581F29C14700DCF26F /* NSArray+SRGuardian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SRGuardian.m"; sourceTree = "<group>"; };
-		688D625A1F29C15100DCF26F /* NSMutableArray+SRGuardian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SRGuardian.h"; sourceTree = "<group>"; };
-		688D625B1F29C15100DCF26F /* NSMutableArray+SRGuardian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SRGuardian.m"; sourceTree = "<group>"; };
-		688D625D1F29C15C00DCF26F /* NSDictionary+SRGuardian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SRGuardian.h"; sourceTree = "<group>"; };
-		688D625E1F29C15C00DCF26F /* NSDictionary+SRGuardian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SRGuardian.m"; sourceTree = "<group>"; };
-		688D62601F29C1FA00DCF26F /* SRNullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNullSafe.m; sourceTree = "<group>"; };
+		68C333801F380FD00012013C /* NSArray+SRGuardian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SRGuardian.h"; sourceTree = "<group>"; };
+		68C333811F380FD00012013C /* NSArray+SRGuardian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SRGuardian.m"; sourceTree = "<group>"; };
+		68C333821F380FD00012013C /* NSDictionary+SRGuardian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SRGuardian.h"; sourceTree = "<group>"; };
+		68C333831F380FD00012013C /* NSDictionary+SRGuardian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SRGuardian.m"; sourceTree = "<group>"; };
+		68C333841F380FD00012013C /* NSMutableArray+SRGuardian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SRGuardian.h"; sourceTree = "<group>"; };
+		68C333851F380FD00012013C /* NSMutableArray+SRGuardian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SRGuardian.m"; sourceTree = "<group>"; };
+		68C333861F380FD00012013C /* NSMutableDictionary+SRGuardian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SRGuardian.h"; sourceTree = "<group>"; };
+		68C333871F380FD00012013C /* NSMutableDictionary+SRGuardian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SRGuardian.m"; sourceTree = "<group>"; };
+		68C333881F380FD00012013C /* NSObject+SRSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SRSwizzling.h"; sourceTree = "<group>"; };
+		68C333891F380FD00012013C /* NSObject+SRSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SRSwizzling.m"; sourceTree = "<group>"; };
+		68C3338A1F380FD00012013C /* SRNullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNullSafe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,6 @@
 		688D62201F29C0A400DCF26F = {
 			isa = PBXGroup;
 			children = (
-				688D62441F29C0D600DCF26F /* SRObjCCodeGuardian */,
 				688D622B1F29C0A400DCF26F /* SRObjCCodeGuardianDemo */,
 				688D622A1F29C0A400DCF26F /* Products */,
 			);
@@ -76,6 +75,7 @@
 		688D622B1F29C0A400DCF26F /* SRObjCCodeGuardianDemo */ = {
 			isa = PBXGroup;
 			children = (
+				68C3337F1F380FD00012013C /* SRObjCCodeGuardian */,
 				688D62321F29C0A400DCF26F /* ViewController.h */,
 				688D62331F29C0A400DCF26F /* ViewController.m */,
 				688D622C1F29C0A400DCF26F /* Supporting Files */,
@@ -97,22 +97,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		688D62441F29C0D600DCF26F /* SRObjCCodeGuardian */ = {
+		68C3337F1F380FD00012013C /* SRObjCCodeGuardian */ = {
 			isa = PBXGroup;
 			children = (
-				688D62601F29C1FA00DCF26F /* SRNullSafe.m */,
-				688D62451F29C0E700DCF26F /* NSObject+SRSwizzling.h */,
-				688D62461F29C0E700DCF26F /* NSObject+SRSwizzling.m */,
-				688D62571F29C14700DCF26F /* NSArray+SRGuardian.h */,
-				688D62581F29C14700DCF26F /* NSArray+SRGuardian.m */,
-				688D625A1F29C15100DCF26F /* NSMutableArray+SRGuardian.h */,
-				688D625B1F29C15100DCF26F /* NSMutableArray+SRGuardian.m */,
-				688D625D1F29C15C00DCF26F /* NSDictionary+SRGuardian.h */,
-				688D625E1F29C15C00DCF26F /* NSDictionary+SRGuardian.m */,
-				688D62541F29C13E00DCF26F /* NSMutableDictionary+SRGuardian.h */,
-				688D62551F29C13E00DCF26F /* NSMutableDictionary+SRGuardian.m */,
+				68C333881F380FD00012013C /* NSObject+SRSwizzling.h */,
+				68C333891F380FD00012013C /* NSObject+SRSwizzling.m */,
+				68C333801F380FD00012013C /* NSArray+SRGuardian.h */,
+				68C333811F380FD00012013C /* NSArray+SRGuardian.m */,
+				68C333821F380FD00012013C /* NSDictionary+SRGuardian.h */,
+				68C333831F380FD00012013C /* NSDictionary+SRGuardian.m */,
+				68C333841F380FD00012013C /* NSMutableArray+SRGuardian.h */,
+				68C333851F380FD00012013C /* NSMutableArray+SRGuardian.m */,
+				68C333861F380FD00012013C /* NSMutableDictionary+SRGuardian.h */,
+				68C333871F380FD00012013C /* NSMutableDictionary+SRGuardian.m */,
+				68C3338A1F380FD00012013C /* SRNullSafe.m */,
 			);
-			path = SRObjCCodeGuardian;
+			name = SRObjCCodeGuardian;
+			path = ../../SRObjCCodeGuardian;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,14 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				688D62341F29C0A400DCF26F /* ViewController.m in Sources */,
-				688D625C1F29C15100DCF26F /* NSMutableArray+SRGuardian.m in Sources */,
-				688D62611F29C1FA00DCF26F /* SRNullSafe.m in Sources */,
 				688D62311F29C0A400DCF26F /* AppDelegate.m in Sources */,
-				688D62591F29C14700DCF26F /* NSArray+SRGuardian.m in Sources */,
-				688D62471F29C0E700DCF26F /* NSObject+SRSwizzling.m in Sources */,
+				68C333901F380FD00012013C /* SRNullSafe.m in Sources */,
+				68C3338F1F380FD00012013C /* NSObject+SRSwizzling.m in Sources */,
+				68C3338B1F380FD00012013C /* NSArray+SRGuardian.m in Sources */,
 				688D622E1F29C0A400DCF26F /* main.m in Sources */,
-				688D625F1F29C15C00DCF26F /* NSDictionary+SRGuardian.m in Sources */,
-				688D62561F29C13E00DCF26F /* NSMutableDictionary+SRGuardian.m in Sources */,
+				68C3338C1F380FD00012013C /* NSDictionary+SRGuardian.m in Sources */,
+				68C3338E1F380FD00012013C /* NSMutableDictionary+SRGuardian.m in Sources */,
+				68C3338D1F380FD00012013C /* NSMutableArray+SRGuardian.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
