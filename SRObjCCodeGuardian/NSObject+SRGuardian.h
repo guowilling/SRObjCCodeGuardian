@@ -18,11 +18,11 @@
 #define SRObjCCodeGuardianLogFormatter(exceptionInfo)            \
 SRObjCCodeGuardianAssert(exceptionInfo);                         \
 printf("----------------SRObjCCodeGuardian-----------------\n"); \
-HSLog(@"%@", exceptionInfo);                                     \
+SRLog(@"%@", exceptionInfo);                                     \
 printf("---------------------------------------------------\n"); \
 
 #ifdef SRObjCCodeGuardianDebugMode
-#define HSLog(FORMAT, ...) {\
+#define SRLog(FORMAT, ...) {\
 NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];\
 [dateFormatter setDateStyle:NSDateFormatterMediumStyle];\
 [dateFormatter setTimeStyle:NSDateFormatterShortStyle];\
@@ -31,7 +31,7 @@ NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];\
 fprintf(stderr,"[%s:%d %s] %s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [dateString UTF8String], [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);\
 }
 #else
-#define HSLog(FORMAT, ...) nil
+#define SRLog(FORMAT, ...) nil
 #endif
 
 @interface NSObject (SRGuardian)
