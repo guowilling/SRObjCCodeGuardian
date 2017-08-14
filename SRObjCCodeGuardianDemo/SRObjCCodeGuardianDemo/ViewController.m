@@ -39,7 +39,7 @@
     
     // NullSafe
     id nullValue = [NSNull null];
-    NSString *result = [nullValue stringValue]; // [NSNull stringValue]: unrecognized selector sent to instance
+    NSString *result = [nullValue stringValue]; // [NSNull stringValue]: unrecognized selector sent to instance -> return nil
     NSAssert(result == nil, @"result is not nil.");
 }
 

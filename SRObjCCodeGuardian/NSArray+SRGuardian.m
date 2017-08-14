@@ -7,7 +7,7 @@
 //
 
 #import "NSArray+SRGuardian.h"
-#import "NSObject+SRSwizzling.h"
+#import "NSObject+SRGuardian.h"
 #import <objc/runtime.h>
 
 @implementation NSArray (SRGuardian)

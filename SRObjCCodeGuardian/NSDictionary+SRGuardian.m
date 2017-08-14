@@ -7,7 +7,7 @@
 //
 
 #import "NSDictionary+SRGuardian.h"
-#import "NSObject+SRSwizzling.h"
+#import "NSObject+SRGuardian.h"
 #import <objc/runtime.h>
 
 @implementation NSDictionary (SRGuardian)
@@ -24,15 +24,15 @@
 - (id)hook_objectForKey:(id)aKey {
     
     return [self hook_objectForKey:aKey];
-    if (!aKey) {
-        NSLog(@"%s the key is nil.", __FUNCTION__);
-        return nil;
-    }
-    if (![[self allKeys] containsObject:aKey]) {
-        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
-        return nil;
-    }
-    return [self hook_objectForKey:aKey];
+//    if (!aKey) {
+//        NSLog(@"%s the key is nil.", __FUNCTION__);
+//        return nil;
+//    }
+//    if (![[self allKeys] containsObject:aKey]) {
+//        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
+//        return nil;
+//    }
+//    return [self hook_objectForKey:aKey];
 }
 
 @end
