@@ -2,7 +2,7 @@
 //  NSArray+SRGuardian.m
 //  SRObjCCodeGuardianDemo
 //
-//  Created by 郭伟林 on 2017/7/27.
+//  Created by https://github.com/guowilling on 2017/7/27.
 //  Copyright © 2017年 SR. All rights reserved.
 //
 
@@ -13,7 +13,6 @@
 @implementation NSArray (SRGuardian)
 
 + (void)load {
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [objc_getClass("__NSArrayI") methodSwizzlingWithOriginalSelector:@selector(objectAtIndex:)
@@ -22,7 +21,6 @@
 }
 
 - (id)hook_objectAtIndex:(NSUInteger)index {
-    
     NSString *exceptionInfo = nil;
     if (self.count == 0) {
         exceptionInfo = [NSString stringWithFormat:@"%s the array is empty.", __FUNCTION__];

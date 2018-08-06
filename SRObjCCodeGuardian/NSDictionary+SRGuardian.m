@@ -2,7 +2,7 @@
 //  NSDictionary+SRGuardian.m
 //  SRObjCCodeGuardianDemo
 //
-//  Created by 郭伟林 on 2017/7/27.
+//  Created by https://github.com/guowilling on 2017/7/27.
 //  Copyright © 2017年 SR. All rights reserved.
 //
 
@@ -13,7 +13,6 @@
 @implementation NSDictionary (SRGuardian)
 
 + (void)load {
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [objc_getClass("__NSDictionaryI") methodSwizzlingWithOriginalSelector:@selector(objectForKey:)
@@ -22,8 +21,6 @@
 }
 
 - (id)hook_objectForKey:(id)aKey {
-    
-    return [self hook_objectForKey:aKey];
 //    if (!aKey) {
 //        NSLog(@"%s the key is nil.", __FUNCTION__);
 //        return nil;
@@ -32,7 +29,7 @@
 //        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
 //        return nil;
 //    }
-//    return [self hook_objectForKey:aKey];
+    return [self hook_objectForKey:aKey];
 }
 
 @end

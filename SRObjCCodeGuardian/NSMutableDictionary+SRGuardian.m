@@ -2,7 +2,7 @@
 //  NSMutableDictionary+SRGuardian.m
 //  SRObjCCodeGuardianDemo
 //
-//  Created by 郭伟林 on 2017/7/27.
+//  Created by https://github.com/guowilling on 2017/7/27.
 //  Copyright © 2017年 SR. All rights reserved.
 //
 
@@ -13,7 +13,6 @@
 @implementation NSMutableDictionary (SRGuardian)
 
 + (void)load {
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [objc_getClass("__NSDictionaryM") methodSwizzlingWithOriginalSelector:@selector(objectForKey:)
@@ -28,8 +27,6 @@
 }
 
 - (id)hook_objectForKey:(id)aKey {
-    
-    return [self hook_objectForKey:aKey];
 //    if (!aKey) {
 //        NSLog(@"%s the key is nil.", __FUNCTION__);
 //        return nil;
@@ -38,12 +35,10 @@
 //        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
 //        return nil;
 //    }
-//    return [self hook_objectForKey:aKey];
+    return [self hook_objectForKey:aKey];
 }
 
 - (void)hook_removeObjectForKey:(id)aKey {
-    
-    [self hook_removeObjectForKey:aKey];
 //    if (!aKey) {
 //        NSLog(@"%s the key is nil.", __FUNCTION__);
 //        return;
@@ -52,11 +47,10 @@
 //        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
 //        return;
 //    }
-//    [self hook_removeObjectForKey:aKey];
+    [self hook_removeObjectForKey:aKey];
 }
 
 - (void)hook_setObject:(id)anObject forKey:(id<NSCopying>)aKey {
-    
     NSString *exceptionInfo = nil;
     if (!aKey) {
         exceptionInfo = [NSString stringWithFormat:@"%s the key is nil.", __FUNCTION__];
@@ -64,7 +58,7 @@
         return;
     }
     if (!anObject) {
-        exceptionInfo = [NSString stringWithFormat:@"%s the %@ object is nil.", __FUNCTION__, anObject];
+        exceptionInfo = [NSString stringWithFormat:@"%s the object is nil.", __FUNCTION__];
         SRObjCCodeGuardianLogFormatter(exceptionInfo);
         return;
     }
