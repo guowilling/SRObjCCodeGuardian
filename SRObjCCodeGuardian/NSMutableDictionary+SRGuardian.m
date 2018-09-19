@@ -13,40 +13,40 @@
 @implementation NSMutableDictionary (SRGuardian)
 
 + (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [objc_getClass("__NSDictionaryM") methodSwizzlingWithOriginalSelector:@selector(objectForKey:)
-                                                             swizzledSelector:@selector(hook_objectForKey:)];
-        
-        [objc_getClass("__NSDictionaryM") methodSwizzlingWithOriginalSelector:@selector(removeObjectForKey:)
-                                                             swizzledSelector:@selector(hook_removeObjectForKey:)];
-        
-        [objc_getClass("__NSDictionaryM") methodSwizzlingWithOriginalSelector:@selector(setObject:forKey:)
-                                                             swizzledSelector:@selector(hook_setObject:forKey:)];
-    });
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        [objc_getClass("__NSDictionaryM") methodSwizzlingWithOriginalSelector:@selector(objectForKey:)
+//                                                             swizzledSelector:@selector(hook_objectForKey:)];
+//
+//        [objc_getClass("__NSDictionaryM") methodSwizzlingWithOriginalSelector:@selector(removeObjectForKey:)
+//                                                             swizzledSelector:@selector(hook_removeObjectForKey:)];
+//
+//        [objc_getClass("__NSDictionaryM") methodSwizzlingWithOriginalSelector:@selector(setObject:forKey:)
+//                                                             swizzledSelector:@selector(hook_setObject:forKey:)];
+//    });
 }
 
 - (id)hook_objectForKey:(id)aKey {
-//    if (!aKey) {
-//        NSLog(@"%s the key is nil.", __FUNCTION__);
-//        return nil;
-//    }
-//    if (![[self allKeys] containsObject:aKey]) {
-//        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
-//        return nil;
-//    }
+    if (!aKey) {
+        NSLog(@"%s the key is nil.", __FUNCTION__);
+        return nil;
+    }
+    if (![[self allKeys] containsObject:aKey]) {
+        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
+        return nil;
+    }
     return [self hook_objectForKey:aKey];
 }
 
 - (void)hook_removeObjectForKey:(id)aKey {
-//    if (!aKey) {
-//        NSLog(@"%s the key is nil.", __FUNCTION__);
-//        return;
-//    }
-//    if (![[self allKeys] containsObject:aKey]) {
-//        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
-//        return;
-//    }
+    if (!aKey) {
+        NSLog(@"%s the key is nil.", __FUNCTION__);
+        return;
+    }
+    if (![[self allKeys] containsObject:aKey]) {
+        NSLog(@"%s the %@ key is not in the dictionary.", __FUNCTION__, aKey);
+        return;
+    }
     [self hook_removeObjectForKey:aKey];
 }
 

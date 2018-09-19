@@ -5,7 +5,7 @@
 //  Created by https://github.com/guowilling on 2017/7/27.
 //  Copyright © 2017年 SR. All rights reserved.
 //
-//  守护 ObjC 代码, 防止操作数组字典, unrecognized selector 等引起的程序 Crash.
+//  守护 ObjC 代码, 防止操作数组字典, unrecognized selector 等引起的程序崩溃.
 
 #import <Foundation/Foundation.h>
 

@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     // NSArray+Guardian
     NSArray *testArray = @[@"one", @"two"];
@@ -42,12 +41,5 @@
     NSString *result = [nullValue stringValue]; // [NSNull stringValue]: unrecognized selector sent to instance -> return nil
     NSAssert(result == nil, @"result is not nil.");
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
